@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-pri: #ffffff;
+    --color-sec: rgb(0, 106, 77);
+    --color-tert: #69be28;
+    --color-dark: #000;
+    --color-foot:#3c3c3c;
+
+}
+
+.heading {
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--color-pri);
+    margin-bottom: 2.8rem;
+}
+
+.main-heading {
+    font-size: 5.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-pri);
+    margin-bottom: 5rem;
+}
+
+.sub-text {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--color-pri);
+    text-transform: capitalize;
+}
+
+.para {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+    color: var(--color-dark);
+}
+
+header {
+    background-color: var(--color-pri);
+    margin-bottom: 0px;
+}
+header .navbar-header{
+    height: 8rem;
+}
+
+header .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+
+}
+
+header .navbar-default .navbar-brand {
+    padding: 1.5rem 0;
+}
+header .navbar-default .navbar-toggle {
+    border-color: var(--color-sec);
+    margin-top: 2rem;
+}
+header .navbar-default .navbar-toggle:focus, header .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+header .navbar-default .navbar-toggle .icon-bar {
+    background-color: var(--color-sec);
+}
+header .navcenter {
+    padding-left: 15rem;
+}
+
+header .navbar {
+    margin-bottom: 0;
+}
+
+header .navbar-default .navbar-nav>li>a {
+    font-size: 1.8rem;
+    color: var(--color-sec);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 3.2rem;
+
+}
+
+header .navcenter li a:hover,header .navcenter li a.active {
+    color: var(--color-tert) !important;
+}
+header .navcenter .active a::before{
+    width: 100%;
+}
+header .navcenter li a::before,
+header .navcenter li .active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: var(--color-tert);
+    transition: all 0.7s ease-in-out;
+}
+
+header .navcenter li a:hover::before {
+    width: 100%;
+}
+
+header .navbar-default .navbar-right>li>a {
+    width: 11.5rem;
+    height: 5rem;
+    border-radius: 0rem;
+    border: 1px solid var(--color-tert);
+    background-color: var(--color-tert);
+    color: var(--color-pri);
+    transition: all 0.7s ease-in-out;
+}
+
+header .navbar-default .navbar-right>li>a:hover,
+header .navbar-default .navbar-right>li>a:active,
+header .navbar-default .navbar-right>li>a:focus {
+    background-color: var(--color-pri);
+    color: var(--color-tert);
+}
+
+main {
+    background-image: -webkit-linear-gradient(rgb(0, 106, 77, 0.5), rgb(0, 106, 770, 0.5)), url(../images/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 12rem 0;
+    margin-top: -0.1rem;
+}
+main .main-heading{
+    text-decoration: underline var(--color-pri) 1px;
+    text-underline-offset: 2.8rem;
+}
+
+.about {
+    padding: 12rem 0 9.5rem;
+    background-color: var(--color-pri);
+}
+
+.about .main-heading {
+    font-size: 3.6rem;
+    color: var(--color-sec);
+    margin-bottom: 2.2rem;
+}
+
+.about .sub-text {
+    font-size: 2rem;
+    color: var(--color-sec);
+    margin-bottom: 1.5rem;
+}
+
+.about .image img{
+    margin-top: 8.2rem;
+    width: 100%;
+}
+
+.speakers {
+    padding: 10rem 0;
+    background-color: var(--color-sec);
+}
+
+.speaker-info .main-heading {
+    font-size: 3.6rem;
+    color: var(--color-pri);
+    margin-bottom: 3rem;
+}
+
+.speaker-info .para {
+    font-size: 1.6rem;
+    color: var(--color-pri);
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.speaker-element img {
+    margin-bottom: 1.3rem;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+.speaker-element .main-heading {
+    font-size: 1.8rem;
+    color: var(--color-pri);
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+.speaker-element .para {
+    font-size: 1.4rem;
+    color: var(--color-pri);
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: initial;
+}
+.btnele a{
+    height: 4.5rem;
+    font-size:1.8rem ;
+    margin-top: 7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-pri) !important;
+    border:2px solid var(--color-pri);
+    background-color: transparent;
+    border-radius: initial;
+    position: relative;
+    transition: all .7s ease-in-out;
+}
+
+.btnele a:hover{
+    background-color: var(--color-pri);
+    color: var(--color-sec) !important;
+}
+footer{
+    background-color: var(--color-foot);
+    padding: 7.5rem 0;
+  
+}
+footer a{
+    color: var(--color-pri);
+    font-size: 16;
+    font-weight: bold;
+}
+.copyright{
+    display: inline-block;
+    margin-top: 3rem;
+}
+footer h4{
+    color: var(--color-pri);
+    font-size: 18;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@media all and (max-width:992px) {
+    header .nav>li>a {
+        padding: 15px 6px;
+    }
+    header .navcenter {
+        padding-left:3rem;
+    }
+    .speakers .speaker-element{
+        margin-bottom: 5rem;
+    }
+    .speaker-element img{
+        width: 16.3rem;
+        height: 16.3rem;
+    }
+}
+@media all and (max-width:768px) {
+    main, .about, .about, .speakers, footer{
+        padding: 4rem 0;
+    }
+    header .navcenter {
+        padding-left:0;
+    }
+    .about .image img{
+        margin-top: 4rem;
+    }
+    .btnele a, header .navbar-default .navbar-nav>li>a{
+        margin-top: 0;
+    }
+    
+}
